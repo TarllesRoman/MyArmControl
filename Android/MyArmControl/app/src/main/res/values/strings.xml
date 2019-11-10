@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">MyArmControl</string>
+    <string name="up">Up</string>
+    <string name="down">Down</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="mac_bluetooth">Mac Bluetooth</string>
+    <string name="conect">Conect</string>
+    <string name="save">Save</string>
+    <string name="configuracoes">Configurações</string>
+    <string name="motor_4">Motor 4</string>
+    <string name="motor_1">Motor 1</string>
+    <string name="motor_2">Motor 2</string>
+    <string name="motor_3">Motor 3</string>
+    <string name="precis_o">Precisão</string>
 </resources>

@@ -1,18 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.troman.myarmcontrol.MainActivity">
+    tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <Button
+        android:id="@+id/btRightUp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="82dp"
+        android:background="@drawable/arr_up"
+        android:onClick="onclick"
+        app:layout_constraintBottom_toTopOf="@+id/btRightDown"
+        app:layout_constraintEnd_toEndOf="@+id/btRightRight"
+        app:layout_constraintStart_toStartOf="@+id/btRoghtLeft" />
+
+    <Button
+        android:id="@+id/btRoghtLeft"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="82dp"
+        android:background="@drawable/arr_open"
+        android:onClick="onclick"
+        app:layout_constraintBottom_toBottomOf="@+id/btRightDown"
+        app:layout_constraintEnd_toStartOf="@+id/btRightRight"
+        app:layout_constraintTop_toTopOf="@+id/btRightUp" />
+
+    <Button
+        android:id="@+id/btRightRight"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/arr_close"
+        android:onClick="onclick"
+        app:layout_constraintBottom_toBottomOf="@+id/btRoghtLeft"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btRightUp" />
+
+    <Button
+        android:id="@+id/btRightDown"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/arr_dwon"
+        android:onClick="onclick"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btRightUp"
+        app:layout_constraintStart_toStartOf="@+id/btRightUp" />
+
+    <Button
+        android:id="@+id/btLeftUp"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/arr_up"
+        android:onClick="onclick"
+        app:layout_constraintBottom_toTopOf="@+id/btLeftRight"
+        app:layout_constraintEnd_toEndOf="@+id/btLeftRight"
+        app:layout_constraintStart_toStartOf="@+id/btLeftLeft"
+        app:layout_constraintTop_toTopOf="@+id/btRightUp" />
+
+    <Button
+        android:id="@+id/btLeftLeft"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="26dp"
+        android:background="@drawable/arr_left"
+        android:onClick="onclick"
+        app:layout_constraintBottom_toBottomOf="@+id/btLeftRight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btLeftUp" />
+
+    <Button
+        android:id="@+id/btLeftRight"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="80dp"
+        android:background="@drawable/arr_right"
+        android:onClick="onclick"
+        app:layout_constraintBottom_toBottomOf="@+id/btRoghtLeft"
+        app:layout_constraintStart_toEndOf="@+id/btLeftLeft"
+        app:layout_constraintTop_toTopOf="@+id/btRoghtLeft" />
+
+    <Button
+        android:id="@+id/btLeftDown"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/arr_dwon"
+        android:onClick="onclick"
+        app:layout_constraintBottom_toBottomOf="@+id/btRightDown"
+        app:layout_constraintEnd_toEndOf="@+id/btLeftRight"
+        app:layout_constraintStart_toStartOf="@+id/btLeftLeft"
+        app:layout_constraintTop_toTopOf="@+id/btRightDown" />
+
+    <Button
+        android:id="@+id/btConf"
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/config"
+        android:onClick="onclickConf"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/btReset"
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/refresh"
+        android:onClick="onclickReset"
+        app:layout_constraintEnd_toStartOf="@+id/btConf"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
