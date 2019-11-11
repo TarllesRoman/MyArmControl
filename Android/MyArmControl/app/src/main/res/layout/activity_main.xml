@@ -36,12 +36,13 @@
         android:id="@+id/btRightRight"
         android:layout_width="80dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/arr_close"
         android:onClick="onclick"
         app:layout_constraintBottom_toBottomOf="@+id/btRoghtLeft"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btRightUp" />
+        app:layout_constraintTop_toBottomOf="@+id/btRightUp"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btRightDown"
@@ -106,8 +107,8 @@
         android:id="@+id/btConf"
         android:layout_width="50dp"
         android:layout_height="43dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="272dp"
         android:background="@drawable/config"
         android:onClick="onclickConf"
         app:layout_constraintEnd_toEndOf="parent"
@@ -117,10 +118,12 @@
         android:id="@+id/btReset"
         android:layout_width="50dp"
         android:layout_height="43dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/refresh"
         android:onClick="onclickReset"
         app:layout_constraintEnd_toStartOf="@+id/btConf"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

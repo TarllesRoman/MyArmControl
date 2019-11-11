@@ -19,7 +19,7 @@ String command = "";
 int lim_m1[]={90,0,180};
 int lim_m2[]={60,0,180};
 int lim_m3[]={70,0,180};
-int lim_m4[]={110,0,180};
+int lim_m4[]={180,0,180};
 
 //Obtém o numero do motor na string recebida, numero antes do '#'
 int get_codigo(String string){
@@ -74,7 +74,7 @@ void setup() {
   delay(500);
   serv3.write(motor3);
   delay(500);
-  serv4.write(motor4)
+  serv4.write(motor4);
   delay(1600);
 }
 
@@ -142,12 +142,9 @@ void loop(){
       }
 
       serv1.write(motor1);
-      delay(200);
       serv2.write(motor2);
-      delay(200);
       serv3.write(motor3);
-      delay(200);
-      serv4.write(motor4)
+      serv4.write(motor4);
   
       command = "";
       
