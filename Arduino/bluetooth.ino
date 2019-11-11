@@ -19,7 +19,7 @@ String command = "";
 int lim_m1[]={90,0,180};
 int lim_m2[]={60,0,180};
 int lim_m3[]={70,0,180};
-int lim_m4[]={180,0,180};
+int lim_m4[]={110,80,110};
 
 //Obtém o numero do motor na string recebida, numero antes do '#'
 int get_codigo(String string){
